@@ -8,7 +8,7 @@
 
 If you'd like to help support the project, you may drop a ★ on it.
 
-<a href="https://discord.gg/Tb9GSKGq6g" target="_blank"><img src="https://discordapp.com/api/guilds/950947559474618440/widget.png?style=banner2" alt="Discord Banner 2"/></a>
+<a href="https://discord.gg/Tb9GSKGq6g" target="_blank"><img src="https://discordapp.com/api/guilds/1250032443369590825/widget.png?style=banner2" alt="Discord Banner 2"/></a>
 
 You may also [join the Discord server](https://discord.gg/Tb9GSKGq6g) (can also click the banner above) if you'd like to keep up more with the development with the project.
 
