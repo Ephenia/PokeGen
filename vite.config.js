@@ -8,7 +8,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: false,
-    outDir: 'dist'
+    outDir: 'docs',
   },
   plugins: [
     inferno()
