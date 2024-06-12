@@ -15,7 +15,8 @@ You may also [join the Discord server](https://discord.gg/Tb9GSKGq6g) (can also 
 # Libraries Used
 • [chancejs](https://github.com/chancejs/chancejs)<br>
 • [HackTimer](https://github.com/turuslan/HackTimer)<br>
-• [inferno](https://www.npmjs.com/package/inferno)
+• [inferno](https://www.npmjs.com/package/inferno)<br>
+• [localForage](https://www.npmjs.com/package/localforage)
 
 # Other Resources Used
 • Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/).<br>

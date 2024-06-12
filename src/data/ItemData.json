@@ -1,0 +1,92 @@
+{
+    "548": {
+        "id": 548,
+        "src": "fire",
+        "name": "Fire Gem"
+    },
+    "549": {
+        "id": 549,
+        "src": "water",
+        "name": "Water Gem"
+    },
+    "550": {
+        "id": 550,
+        "src": "electric",
+        "name": "Electric Gem"
+    },
+    "551": {
+        "id": 551,
+        "src": "grass",
+        "name": "Grass Gem"
+    },
+    "552": {
+        "id": 552,
+        "src": "ice",
+        "name": "Ice Gem"
+    },
+    "553": {
+        "id": 553,
+        "src": "fighting",
+        "name": "Fighting Gem"
+    },
+    "554": {
+        "id": 554,
+        "src": "poison",
+        "name": "Poison Gem"
+    },
+    "555": {
+        "id": 555,
+        "src": "ground",
+        "name": "Ground Gem"
+    },
+    "556": {
+        "id": 556,
+        "src": "flying",
+        "name": "Flying Gem"
+    },
+    "557": {
+        "id": 557,
+        "src": "psychic",
+        "name": "Psychic Gem"
+    },
+    "558": {
+        "id": 558,
+        "src": "bug",
+        "name": "Bug Gem"
+    },
+    "559": {
+        "id": 559,
+        "src": "rock",
+        "name": "Rock Gem"
+    },
+    "560": {
+        "id": 560,
+        "src": "ghost",
+        "name": "Ghost Gem"
+    },
+    "561": {
+        "id": 561,
+        "src": "dragon",
+        "name": "Dragon Gem"
+    },
+    "562": {
+        "id": 562,
+        "src": "dark",
+        "name": "Dark Gem"
+    },
+    "563": {
+        "id": 563,
+        "src": "steel",
+        "name": "Steel Gem"
+    },
+    "564": {
+        "id": 564,
+        "src": "normal",
+        "name": "Normal Gem"
+    },
+    "715": {
+        "id": 715,
+        "src": "fairy",
+        "name": "Fairy Gem"
+    }
+}
