@@ -7,7 +7,8 @@ export default defineConfig({
     port: 5500
   },
   build: {
-    sourcemap: false
+    sourcemap: false,
+    outDir: 'dist'
   },
   plugins: [
     inferno()
