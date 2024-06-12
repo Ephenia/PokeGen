@@ -25,7 +25,7 @@ export function renderCurrency() {
                         <div className={'gem-container'}>
                             <div className={'gem-information'}>
                                 <div className={'item-container'}>
-                                    <img src={`./src/assets/items/gem/${itemIDToSrc(gemID)}.png`}></img>
+                                    <img src={`./assets/items/gem/${itemIDToSrc(gemID)}.png`}></img>
                                 </div>
                                 <div className={'gem-name'}>{itemIDToName(gemID)}</div>
                             </div>
