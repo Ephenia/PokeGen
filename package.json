@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "watch": "vite build --watch",
+    "watch": "concurrently \"vite build --watch\" \"vite\"",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "vite": "^5.2.0"
   },
   "dependencies": {
