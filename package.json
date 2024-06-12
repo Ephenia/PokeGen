@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "rm -rf docs && mv dist docs",
+    "deploy": "npm run build && git add docs && git commit -m 'Deploy to GitHub Pages' && git push origin master",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   },
   "dependencies": {
