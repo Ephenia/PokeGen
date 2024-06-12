@@ -24,6 +24,7 @@ let saveData = DefaultSaveData;
         saveData = fetchSaveData;
     }
     console.info("Save data:", saveData);
+    await checkVersion();
     await setProxy();
     renderApp();
 })();
@@ -43,6 +44,13 @@ async function saveGame() {
         //console.log("Save data updated successfully:", saveData);
     } catch (err) {
         console.log(err);
+    }
+}
+
+async function checkVersion() {
+    if (!saveData.hasOwnProperty('version') || saveData.version !== DefaultSaveData.version) {
+        console.log("Save data version is outdated. Resetting save data...");
+        saveData = DefaultSaveData;
     }
 }
 
