@@ -10,7 +10,6 @@ export default defineConfig({
     sourcemap: false,
     outDir: './docs',
     assetsDir: './assets',
-    base: '/PokeGen/',
   },
   plugins: [
     inferno()
@@ -19,5 +18,6 @@ export default defineConfig({
     alias: {
       'inferno': 'inferno/dist/index.esm.js'
     }
-  }
+  },
+  base: '/PokeGen/',
 });
