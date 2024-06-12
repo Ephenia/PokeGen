@@ -8,8 +8,9 @@ export default defineConfig({
   },
   build: {
     sourcemap: false,
-    outDir: 'docs',
-    base: './',
+    outDir: './docs',
+    assetsDir: './assets',
+    base: '/PokeGen/',
   },
   plugins: [
     inferno()
