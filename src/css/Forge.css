@@ -1,0 +1,24 @@
+#forge {
+    background-color: #282b30;
+    width: 50%;
+    min-height: 200px;
+    outline-style: solid;
+    outline-color: var(--pastel-darkcyan);
+    outline-width: 2px;
+    border-radius: var(--default-radius);
+    padding: 10px;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#gem-conversion {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #424549;
+    border-radius: var(--default-radius);
+    padding: 5px 0px 5px 0px;
+}

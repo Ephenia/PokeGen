@@ -15,6 +15,8 @@
   --interactive-bg-color: #1a1a1a;
   --content-bg-color: #282b30;
   --default-radius: 5px;
+
+  --pastel-darkcyan: #56B3B4;
 }
 
 a {
@@ -48,7 +50,9 @@ h1 {
   padding: 2rem;
   text-align: center;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .logo {
@@ -74,7 +78,10 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
+  outline-style: solid;
+  outline-color: transparent;
+  outline-width: 2px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -86,10 +93,10 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -107,5 +114,4 @@ button:focus-visible {
 .item-container {
   width: 32px;
   height: 32px;
-  margin-left: -16px;
 }

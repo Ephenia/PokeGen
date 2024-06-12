@@ -6,6 +6,11 @@ export function gainItem(itemID, quantity = 1) {
     saveData.items[itemID].quantity += quantity;
 }
 
+export function loseItem(itemID, quantity = 1) {
+    checkItemData(itemID);
+    saveData.items[itemID].quantity -= quantity;
+}
+
 export function itemQuantity(itemID) {
     let itemQuantity = 0;
     try {

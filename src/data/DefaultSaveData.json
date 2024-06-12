@@ -1,4 +1,8 @@
 {
     "energy": 0,
-    "items": {}
+    "items": {},
+    "prefs": {
+        "autoGem": false,
+        "gemConversion": [null, null]
+    }
 }

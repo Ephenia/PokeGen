@@ -1,5 +1,7 @@
 import '../css/Currency.css';
-import { saveData, clearSaveData } from '../components/SaveSystem.jsx';
+import ColorThief from 'colorthief';
+import ItemTextColor from '../data/ItemTextColor.json';
+import { saveData } from '../components/SaveSystem.jsx';
 import { itemCollectionbyName, itemIDToName, itemIDToSrc, itemQuantity, gainItem } from '../methods/item.jsx';
 import { randomRangeInteger } from '../methods/random.jsx';
 
@@ -11,23 +13,47 @@ export function renderCurrency() {
             <div>
                 <button
                     onClick={() => {
-                        clearSaveData();
-                    }}>
-                    ⚡{energy.toLocaleString('en-US')}&nbsp;
+                        saveData.prefs.autoGem = !saveData.prefs.autoGem
+                    }}
+                    style={`border: 2px solid ${saveData.prefs.autoGem ? '#77DD77' : '#FF9999'}`}
+                >
+                    Auto Gem: [{saveData.prefs.autoGem ? 'ON' : 'OFF'}]
                 </button>
+            </div>
+            <div id={'currency-energy'}>
+                <div className={'energy'}>
+                    ⚡{energy.toLocaleString('en-US')}&nbsp;
+                </div>
             </div>
             <div id={'currency-gems'}>
                 {gemIDs.map(gemID => {
                     return <div
                         key={gemID}
                         className={'gem'}
+                        onClick={() => {
+                            if (saveData.prefs.gemConversion[1] !== gemID) {
+                                saveData.prefs.gemConversion[0] = gemID;
+                            }
+                        }}
+                        onContextMenu={(e) => {
+                            e.preventDefault();
+                            if (saveData.prefs.gemConversion[0] !== gemID) {
+                                saveData.prefs.gemConversion[1] = gemID;
+                            }
+                        }}
                     >
                         <div className={'gem-container'}>
                             <div className={'gem-information'}>
-                                <div className={'item-container'}>
-                                    <img src={`./assets/items/gem/${itemIDToSrc(gemID)}.png`}></img>
+                                <div style={`margin-left: -16px;`} className={'item-container'}>
+                                    <img
+                                        src={`./assets/items/gem/${itemIDToSrc(gemID)}.png`}
+                                    ></img>
                                 </div>
-                                <div className={'gem-name'}>{itemIDToName(gemID)}</div>
+                                <div
+                                    style={`color: rgb(${ItemTextColor[gemID][0]}, ${ItemTextColor[gemID][1]}, ${ItemTextColor[gemID][2]})`}
+                                    className={'gem-name'}
+                                >
+                                    {itemIDToName(gemID)}</div>
                             </div>
                             <div>{itemQuantity(gemID).toLocaleString('en-US')}</div>
                         </div>
@@ -40,7 +66,7 @@ export function renderCurrency() {
 
 setInterval(() => {
     saveData.energy++;
-    if (saveData.energy >= 10) {
+    if (saveData.prefs.autoGem && saveData.energy >= 10) {
         saveData.energy -= 10;
         const gemIDs = itemCollectionbyName('Gem');
         const randomGem = gemIDs[randomRangeInteger(0, gemIDs.length - 1)];
