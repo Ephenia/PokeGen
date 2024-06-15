@@ -18,7 +18,7 @@ If you would like to help out, then you are free to submit bugs that you find [b
 - Being able to gain and create energy (essentially what will be the main currency of the game)
 - Be able to use that energy and do things with it (such as creating other items, and things like Pokémon too!)
 - Be able to collect Pokémon and also shiny hunt them
-- The unique idea and concept of being able to convert one Pokémon to another!
+- The unique idea and concept of being able to convert one Pokémon to another!<br>
 ***(and more details soon to come...!)***
 
 The main inspiration behind my idea for this game is actually based off of a Minecraft mod called [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte). I really loved the core idea of this mod and had found it really fun to play around with when it came to bigger mudpack like a [ATM9 Sky](https://www.curseforge.com/minecraft/modpacks/all-the-mods-9-to-the-sky) that I've had a playthrough of recently.
