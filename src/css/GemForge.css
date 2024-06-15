@@ -1,0 +1,63 @@
+.Page-Gem-Forge {
+
+}
+
+.gem-forge-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #424549;
+    border-radius: var(--default-radius);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#stable-gem-conversion > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#stable-gem-conversion > div:not(:first-child) > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+    font-size: 0.85em;
+    flex-direction: column;
+}
+
+.gem-forge-row-top {
+    background-color: var(--interactive-bg-color);
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.gem-forge-row-mid {
+    background-color: var(--content-inner-bg-color);
+    padding: 5px 0px 5px 0px;
+}
+
+.gem-forge-row-bottom {
+    padding: 5px 0px 5px 0px; 
+}
+
+.gem-forge-input-gem-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    padding-top: 0px;
+}
+
+.gem-forge-input-gem-btn > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.gem-forge-reward {
+    display: flex;
+    align-items: center;
+}

@@ -28,7 +28,9 @@ export function itemIDToSrc(itemID) {
 }
 
 export function itemCollectionbyName(itemName) {
-    const itemIDs = Object.keys(ItemData).filter(key => ItemData[key].name.includes(itemName));
+    const itemIDs = Object.keys(ItemData).filter(key => {
+        return Number(ItemData[key].name.includes(itemName));
+    });
     return itemIDs;
 }
 

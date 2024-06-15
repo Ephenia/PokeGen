@@ -1,0 +1,19 @@
+#resources {
+    display: flex;
+    position: absolute;
+    width: 15vw;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    background-color: var(--interactive-bg-color);
+    z-index: 100;
+    align-items: center;
+    user-select: none;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #7289da;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: var(--default-radius);
+    margin: 3px 0px 0px 3px;
+}

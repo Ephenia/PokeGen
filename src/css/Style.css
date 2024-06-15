@@ -14,6 +14,7 @@
 
   --interactive-bg-color: #1a1a1a;
   --content-bg-color: #282b30;
+  --content-inner-bg-color: #1e2124;
   --default-radius: 5px;
 
   --pastel-darkcyan: #56B3B4;
@@ -47,7 +48,7 @@ h1 {
   width: 100%;
   /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1em;
   text-align: center;
   justify-content: center;
   align-items: center;

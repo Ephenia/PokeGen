@@ -1,9 +1,15 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "energy": 0,
     "items": {},
     "prefs": {
-        "autoGem": false,
-        "gemConversion": [null, null]
+        "sel_page": "Energy",
+        "energy": {
+            "autoGem": false
+        },
+        "gemForge": {
+            "unstableGemID": null,
+            "gemConversion": [null, null]
+        }
     }
 }
