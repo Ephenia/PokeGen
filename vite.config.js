@@ -8,7 +8,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: false,
-    outDir: './docs',
+    outDir: './dist',
     assetsDir: './assets',
   },
   plugins: [
