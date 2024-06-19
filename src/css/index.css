@@ -38,7 +38,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   align-items: flex-start;
-  background-image: url(./assets/background/background.png);
+  background-image: url(/PokeGen/assets/background/background.png);
   background-size: cover;
 }
 
