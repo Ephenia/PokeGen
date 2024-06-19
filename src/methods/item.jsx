@@ -1,20 +1,36 @@
-import { saveData } from '../components/SaveSystem.jsx';
+import { saveData, setSaveData } from '../components/SaveSystem.jsx';
 import ItemData from '../data/ItemData.json';
 
 export function gainItem(itemID, quantity = 1) {
     checkItemData(itemID);
-    saveData.items[itemID].quantity += quantity;
+    setSaveData(prev => ({
+        ...prev,
+        items: {
+            ...prev.items,
+            [itemID]: {
+                quantity: prev.items[itemID].quantity + quantity
+            }
+        }
+    }))
 }
 
 export function loseItem(itemID, quantity = 1) {
     checkItemData(itemID);
-    saveData.items[itemID].quantity -= quantity;
+    setSaveData(prev => ({
+        ...prev,
+        items: {
+            ...prev.items,
+            [itemID]: {
+                quantity: prev.items[itemID].quantity - quantity
+            }
+        }
+    }))
 }
 
 export function itemQuantity(itemID) {
     let itemQuantity = 0;
     try {
-        itemQuantity = saveData.items[itemID].quantity;
+        itemQuantity = saveData().items[itemID].quantity;
     } catch (error) { }
     return itemQuantity;
 }
@@ -35,10 +51,16 @@ export function itemCollectionbyName(itemName) {
 }
 
 function checkItemData(itemID) {
-    const itemExists = saveData.items.hasOwnProperty(itemID);
+    const itemExists = saveData().items.hasOwnProperty(itemID);
     if (!itemExists) {
-        saveData.items[itemID] = {
-            quantity: 0
-        };
+        setSaveData(prev => ({
+            ...prev,
+            items: {
+                ...prev.items,
+                [itemID]: {
+                    quantity: 0
+                }
+            }
+        }))
     }
 }

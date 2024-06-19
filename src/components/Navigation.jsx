@@ -1,20 +1,25 @@
 import '../css/Navigation.css';
-import { saveData } from '../components/SaveSystem.jsx';
+import set from 'lodash/set';
+import { saveData, setSaveData } from '../components/SaveSystem.jsx';
+import { updateSaveData } from '../methods/global.jsx';
 
-export function renderNavigation() {
-    const navigationPages = ['Energy', 'Gem Forge', 'Settings'];
+export default function Navigation() {
+  const navigationPages = ['Energy', 'Gem Forge', 'Settings'];
 
-    return (
-        <div>
-            {navigationPages.map(page => (
-                <button
-                    key={page}
-                    className={page === saveData.prefs.sel_page ? 'active' : ''}
-                    onClick={() => saveData.prefs.sel_page = page}
-                >
-                    {page}
-                </button>
-            ))}
-        </div>
-    );
+  return (
+    <div id={'navigation'}>
+      {navigationPages.map(page => (
+        <button
+          key={page}
+          className={page === saveData().prefs.sel_page ? 'active' : ''}
+          onClick={() => {
+            updateSaveData('prefs.sel_page', page);
+            console.log(saveData());
+          }}
+        >
+          {page}
+        </button>
+      ))}
+    </div>
+  );
 }

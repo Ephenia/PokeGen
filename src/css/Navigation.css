@@ -1,0 +1,9 @@
+#navigation {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+#navigation > .active {
+  color: var(--status-active);
+}

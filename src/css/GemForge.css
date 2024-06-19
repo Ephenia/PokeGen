@@ -1,5 +1,6 @@
 .Page-Gem-Forge {
-
+    display: flex;
+    row-gap: 10px;
 }
 
 .gem-forge-container {
@@ -12,14 +13,14 @@
     justify-content: space-evenly;
 }
 
-#stable-gem-conversion > div {
+.gem-forge-container > div {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-#stable-gem-conversion > div:not(:first-child) > * {
+.gem-forge-container > div:not(:first-child) > * {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,16 +44,15 @@
     padding: 5px 0px 5px 0px; 
 }
 
-.gem-forge-input-gem-btn {
+.gem-forge-input-output-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 95%;
-    padding-top: 0px;
+    height: 100%;
 }
 
-.gem-forge-input-gem-btn > div:first-child {
+.gem-forge-input-output-btn > div:first-child {
     display: flex;
     align-items: center;
 }
@@ -60,4 +60,6 @@
 .gem-forge-reward {
     display: flex;
     align-items: center;
+    width: 95%;
+    justify-content: center;
 }

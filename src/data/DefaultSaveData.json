@@ -8,8 +8,8 @@
             "autoGem": false
         },
         "gemForge": {
-            "unstableGemID": null,
-            "gemConversion": [null, null]
+            "unstableGemID": "548",
+            "gemConversion": ["548", "549"]
         }
     }
 }

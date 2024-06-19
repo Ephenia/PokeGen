@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite';
-import inferno from 'vite-plugin-inferno';
+import { defineConfig } from 'vite'
+import solid from 'vite-plugin-solid'
 
 export default defineConfig({
   server: {
-    sourcemap: false,
     port: 5500
   },
   build: {
@@ -11,13 +10,6 @@ export default defineConfig({
     outDir: './dist',
     assetsDir: './assets',
   },
-  plugins: [
-    inferno()
-  ],
-  resolve: {
-    alias: {
-      'inferno': 'inferno/dist/index.esm.js'
-    }
-  },
-  base: '/PokeGen/',
-});
+  plugins: [solid()],
+  base: '/PokeGen/'
+})

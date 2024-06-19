@@ -6,7 +6,7 @@
 
 # About
 
-Currently PokéGen is a WIP clicker/idle/incremental game that's in development. It's built in vanilla JavaScript and using [Inferno](https://www.infernojs.org/).
+Currently PokéGen is a WIP clicker/idle/incremental game that's in development. It's built in vanilla JavaScript and using [SolidJS](https://www.solidjs.com/).
 
 The project is open source, and you are also able to check out the project at any point here:
 - [Github repository](https://github.com/Ephenia/PokeGen)
@@ -25,6 +25,8 @@ The main inspiration behind my idea for this game is actually based off of a Min
 
 I thought it would be really cool to actually turn the core idea and concept of ProjectE and try to apply that to Pokémon in some way and build off of that idea, and that's really where my motivation behind this project mainly lies at. I just thought that it would be a really fun and unique idea that's fresh. It's also in a way reminiscent of [PokeGen](https://projectpokemon.org/home/files/file/1620-pokegen/) which was essentially [PKHeX](https://projectpokemon.org/home/files/file/1-pkhex/) but for earlier generations of Pokémon games.
 
+The development of this game is designed with a 1600x900 browser window in mind. It's currently not mobile friendly.
+
 # Other
 
 If you'd like to help support the project, you may drop a ★ on it.
@@ -36,8 +38,9 @@ You may also [join the Discord server](https://discord.gg/Tb9GSKGq6g) (can also 
 # Libraries Used
 - [chancejs](https://github.com/chancejs/chancejs)<br>
 - [HackTimer](https://github.com/turuslan/HackTimer)<br>
-- [inferno](https://www.npmjs.com/package/inferno)<br>
-- [localForage](https://www.npmjs.com/package/localforage)
+- [localForage](https://www.npmjs.com/package/localforage)<br>
+- [lodash](https://www.npmjs.com/package/lodash)<br>
+- [solid-js](https://www.npmjs.com/package/solid-js)
 
 # Other Resources Used
 - Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/).<br>
