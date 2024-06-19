@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     sourcemap: false,
     outDir: './dist',
-    assetsDir: './assets',
+    //assetsDir: './assets',
   },
   plugins: [solid()],
   base: '/PokeGen/'
